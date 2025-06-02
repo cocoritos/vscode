@@ -3,11 +3,6 @@ ARG CODE_VERSION
 
 FROM debian:12-slim
 
-# Install base packages
-RUN set -ex; \
-    apt-get update && apt-get install -y curl sudo; \
-    apt-get autoremove -y && apt-get clean && rm -rf /var/lib/apt/lists/*;
-
 # Install code-server
 RUN set -ex; \
     # set ARCH dynamically
