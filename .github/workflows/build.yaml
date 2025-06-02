@@ -22,9 +22,6 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: Debug GitHub Ref Name
-        run: echo "GitHub Ref Name: ${{ github.ref_name }}"
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
