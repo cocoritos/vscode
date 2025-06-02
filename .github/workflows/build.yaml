@@ -32,4 +32,4 @@ jobs:
           push: true
           tags: "ghcr.io/${{ github.actor }}/vscode:${{ github.ref_name }}"
           build-args: |
-            CODE_VERSION=${{ github.ref_name }}
+            CODE_VERSION="${{ github.ref_name }}"
