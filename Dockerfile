@@ -1,8 +1,9 @@
 ARG DEBIAN_FRONTEND=noninteractive
 ARG CODE_VERSION
-ENV CODE_VERSION=${CODE_VERSION}
 
 FROM debian:12-slim
+
+ENV CODE_VERSION=${CODE_VERSION}
 
 # Install code-server
 RUN set -ex; \
