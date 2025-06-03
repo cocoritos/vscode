@@ -3,7 +3,9 @@ ARG CODE_VERSION
 
 FROM debian:12-slim
 
-ENV CODE_VERSION=${CODE_VERSION}
+ARG CODE_VERSION
+
+RUN echo "Argument passed is ${CODE_VERSION}"
 
 # Install code-server
 RUN set -ex; \
