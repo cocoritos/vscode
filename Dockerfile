@@ -5,8 +5,6 @@ FROM debian:12-slim
 
 ARG CODE_VERSION
 
-RUN echo "Argument passed is ${CODE_VERSION}"
-
 # Install code-server
 RUN set -ex; \
     # set ARCH dynamically
