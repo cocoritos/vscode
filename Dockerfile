@@ -2,10 +2,10 @@ ARG DEBIAN_FRONTEND=noninteractive \
     VSCODE_VERSION \
     TOFU_VERSION
 
-    FROM debian:12-slim
+FROM debian:12-slim
 
-    ARG VSCODE_VERSION \
-        TOFU_VERSION
+ARG VSCODE_VERSION \
+    TOFU_VERSION
 
 # Install code-server
 RUN set -ex; \
